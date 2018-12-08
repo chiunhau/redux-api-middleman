@@ -11,7 +11,6 @@ import {
   generateBody
 } from './utils'
 import log from './log'
-const FormData = window.FormData;
 
 export default function ({
   timeout,
@@ -46,7 +45,10 @@ export default function ({
 
         if (params.decamelizeRequest) {
           queryObject = decamelizeKeys(queryObject)
-          sendObject = decamelizeKeys(sendObject)
+
+          if (!(sendObject instanceof FormData)) {
+              sendObject = decamelizeKeys(sendObject)
+          }
         }
 
         let omitKeys = params.method.toLowerCase() === 'get' ? ['data'] : []

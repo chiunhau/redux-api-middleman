@@ -1,7 +1,7 @@
 {
   "name": "redux-api-middleman-formdata-fix",
   "version": "0.0.1",
-  "description": "This is a forked version of 'redux-api-middleman'. I added a line of code to support POSTing with FormData. Original description: A Redux middleware making sending request a breeze.",
+  "description": "This is a forked version of 'redux-api-middleman'. I add a few lines to support POSTing with FormData. Original description: A Redux middleware making sending request a breeze.",
   "main": "lib/index.js",
   "jest": {
     "testEnvironment": "node"
@@ -22,7 +22,7 @@
     "release:patch": "yarn run build && release patch",
     "release:minor": "yarn run build && release minor",
     "release:major": "yarn run build && release major",
-    "prepublish": "yarn run test:ci && yarn run clear && yarn run build"
+    "prepublish": "yarn run clear && yarn run build"
   },
   "standard": {
     "env": [
