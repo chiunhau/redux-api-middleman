@@ -11,6 +11,7 @@ import {
   generateBody
 } from './utils'
 import log from './log'
+const FormData = window.FormData;
 
 export default function ({
   timeout,
