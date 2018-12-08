@@ -36,7 +36,7 @@ export default function ({
         let defaultParams = getExtendedParams()
 
         let queryObject = Object.assign({}, defaultParams.query, params.query)
-        let sendObject = Object.assign({}, defaultParams.body, params.body)
+        let sendObject = params.body instanceof FormData ? params.body : Object.assign({}, defaultParams.body, params.body)
         let headersObject = Object.assign({},
           defaultParams.headers,
           params.headers,

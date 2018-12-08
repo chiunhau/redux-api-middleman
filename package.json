@@ -1,7 +1,7 @@
 {
-  "name": "redux-api-middleman",
-  "version": "2.0.1",
-  "description": "A Redux middleware making sending request a breeze",
+  "name": "redux-api-middleman-formdata-fix",
+  "version": "0.0.1",
+  "description": "This is a forked version of 'redux-api-middleman'. I added a line of code to support POSTing with FormData. Original description: A Redux middleware making sending request a breeze.",
   "main": "lib/index.js",
   "jest": {
     "testEnvironment": "node"
@@ -30,10 +30,10 @@
     ]
   },
   "author": {
-    "name": "YangHsing Lin",
-    "email": "yanghsing.lin@gmail.com"
+    "name": "Chiunhau",
+    "email": "chiunhau9@gmail.com"
   },
-  "homepage": "https://github.com/CodementorIO/redux-api-middleman",
+  "homepage": "https://github.com/chiunhau/redux-api-middleman-formdata-fix",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.0.0",
