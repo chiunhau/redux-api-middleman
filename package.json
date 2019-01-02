@@ -1,6 +1,6 @@
 {
   "name": "redux-api-middleman-formdata-fix",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is a forked version of 'redux-api-middleman'. I add a few lines to support POSTing with FormData. Original description: A Redux middleware making sending request a breeze.",
   "main": "lib/index.js",
   "jest": {
